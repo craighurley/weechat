@@ -4,8 +4,10 @@
 
 My [weechat](https://weechat.org/) configuration.  I generally only use [freenode](https://freenode.net/) and authenticate using SASL, so settings reflect that.
 
-This configuration relies on weechat's [secure data](https://www.weechat.org/files/doc/stable/weechat_user.en.html#secured_data) feature.  To set-up secure data, follow these steps:
+This configuration relies on weechat's [secure data](https://www.weechat.org/files/doc/stable/weechat_user.en.html#secured_data) feature.  To use this configuration and set-up secure data, follow these steps:
 
+1. Install weechat.
+2. Clone this repository: `git clone https://github.com/craighurley/weechat.git ~/.weechat`
 1. Create `~/.weechat/sec.conf` and fill in your freenode nickname and SASL password.
 
     ```
