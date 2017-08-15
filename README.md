@@ -7,7 +7,7 @@ My [weechat](https://weechat.org/) configuration.  I generally only use [freenod
 This configuration relies on weechat's [secure data](https://www.weechat.org/files/doc/stable/weechat_user.en.html#secured_data) feature.  To use this configuration and set-up secure data, follow these steps:
 
 1. Install weechat.
-2. Clone this repository: `git clone https://github.com/craighurley/weechat.git ~/.weechat`
+1. Clone this repository: `git clone https://github.com/craighurley/weechat.git ~/.weechat`
 1. Create `~/.weechat/sec.conf` and fill in your freenode nickname and SASL password.
 
     ```
@@ -27,5 +27,9 @@ This configuration relies on weechat's [secure data](https://www.weechat.org/fil
     nick = "YOUR_NICKNAME"
     ```
 
-2. Start weechat.
-3. (Optional) Once connected to freenode, consider protecting the contents of your `sec.conf` file with a password.  In the weechat buffer, run `/secure passphrase YOUR_PASSPHRASE`.
+1. Start weechat.
+1. (Optional) Once connected to freenode, consider protecting the contents of your `sec.conf` file with a password.  In the weechat buffer, run `/secure passphrase YOUR_PASSPHRASE`.
+
+## weechat version
+
+Tested on `1.9`
