@@ -28,6 +28,13 @@ This configuration relies on weechat's [secure data](https://www.weechat.org/fil
     ```
 
 1. Start weechat.
+1. Update the path to the CA file according your your OS:
+
+    - Alpine: `/set weechat.network.gnutls_ca_file "/etc/ssl/certs/ca-certificates.crt"`
+    - CentOS: `/set weechat.network.gnutls_ca_file "/etc/ssl/certs/ca-bundle.crt"`
+    - macOS: `/set weechat.network.gnutls_ca_file "/usr/local/etc/openssl/cert.pem"`
+    - Ubuntu: `/set weechat.network.gnutls_ca_file "/etc/ssl/certs/ca-certificates.crt"`
+
 1. (Optional) Once connected to freenode, consider protecting the contents of your `sec.conf` file with a password.  In the weechat buffer, run `/secure passphrase YOUR_PASSPHRASE`.
 
 ## weechat version
