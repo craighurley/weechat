@@ -59,4 +59,4 @@ This configuration relies on weechat's [secure data](https://www.weechat.org/fil
 
 ## weechat version
 
-Tested on `1.9`
+Tested on `2.3`
