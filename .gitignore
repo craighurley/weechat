@@ -1,6 +1,6 @@
 *.log
+*.pem
 logs/
-sec.conf
 script/plugins.xml.gz
+sec.conf
 weechat_fifo
-
