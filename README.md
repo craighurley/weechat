@@ -8,7 +8,7 @@ This configuration relies on weechat's [secure data](https://www.weechat.org/fil
 
 1. Install weechat.
 1. Clone this repository: `git clone https://github.com/craighurley/weechat.git ~/.weechat`
-1. Create `~/.weechat/sec.conf` and fill in your freenode nickname and SASL password.
+1. Create `~/.weechat/sec.conf` and fill in your freenode nickname and SASL details:
 
     ```
     #
@@ -23,8 +23,28 @@ This configuration relies on weechat's [secure data](https://www.weechat.org/fil
 
     [data]
     __passphrase__ = off
-    freenode_sasl_password = "YOUR_PASSWORD"
     nick = "YOUR_NICKNAME"
+    sasl_mechanism = "plain"
+    freenode_sasl_password = "YOUR_PASSWORD"
+    ```
+
+    Alternatively, if you use SASL ECDSA-NIST256P-CHALLENGE:
+
+    ```
+    #
+    # weechat -- sec.conf
+    #
+
+    [crypt]
+    cipher = aes256
+    hash_algo = sha256
+    passphrase_file = ""
+    salt = on
+
+    [data]
+    __passphrase__ = off
+    nick = "YOUR_NICKNAME"
+    sasl_mechanism = "ecdsa-nist256p-challenge"
     ```
 
 1. Start weechat.
