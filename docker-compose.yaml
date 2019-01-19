@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  weechat:
+    container_name: weechat
+    image: craighurley/docker-weechat
+    volumes:
+      - './:/home/user/.weechat'

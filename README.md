@@ -60,3 +60,11 @@ This configuration relies on weechat's [secure data](https://www.weechat.org/fil
 ## weechat version
 
 Tested on `2.3`
+
+## docker-compose
+
+If you want to run weechat in a container, mounting this content as your config, run the following:
+
+```sh
+docker-compose run --rm weechat
+```
